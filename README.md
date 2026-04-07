@@ -64,18 +64,22 @@ DATA_ENGINE=duckdb # options: duckdb, snowflake_adapter
 ```
 
 ### 📂 Project Structure
+
+```text
 .
 ├── data/
-│   ├── gold_set/          # PDFs de contratos reais para teste
-│   └── raw_telemetry/     # Logs sintéticos gerados para auditoria
+│   ├── gold_set/         
+│   └── raw_telemetry/    
 ├── src/
-│   ├── agents/            # Orquestração LangGraph (State & Nodes)
-│   ├── core/              # Regras de negócio e Schemas Pydantic (Determinismo)
-│   ├── data_engine/       # Interfaces Abstratas e Adapters (DuckDB/Snowflake)
-│   └── parsers/           # Extração via Docling (IBM)
-├── tests/                 # Unitários, Integração e DeepEval
-├── Makefile               # Automação de setup e execução
-└── pyproject.toml         # Gestão de dependências via Poetry
+│   ├── agents/           
+│   ├── core/             
+│   ├── data_engine/      
+│   └── parsers/          
+├── tests/                
+├── Makefile              
+└── pyproject.toml
+```
+
 
 ### 🛠️ Developer Experience (DX) & Quality Assurance
 - **Local-First Development**: Setup completo em < 2 minutos via `make install`.
